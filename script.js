@@ -1,14 +1,17 @@
 var player = {
-    left: 450,
-    top: 720
+    left: 350,
+    top: 600
 }
 
 var enemies = [
-    {left: 250, top: 100},
-    {left: 450, top: 100},
+    {left: 50, top: 200},
+    {left: 150, top: 200},
+    {left: 650, top: 200},
+    {left: 250, top: 200},
+    {left: 350, top: 100},
     {left: 550, top: 200},
-    {left: 350, top: 200},
-    {left: 650, top: 100},
+    {left: 450, top: 200},
+
 ]
   
 
@@ -74,6 +77,7 @@ document.onkeydown = function(e) {
     }
     drawPlayer();
 }
+    
 
       
 function gameLoop() {

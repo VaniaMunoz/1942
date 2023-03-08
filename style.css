@@ -1,7 +1,13 @@
 #container {  
-    background: url('ocean.jpg');
-   height: 840px;
+    background: url('fondo.png');
+    height: 840px;
     width: 1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    background-color: black;
 }
 
 .player {
@@ -25,3 +31,4 @@
     height: 75px;
     position: absolute;
 }
+
