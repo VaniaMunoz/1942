@@ -1,15 +1,16 @@
 var player = {
     left: 450,
-    top: 620
+    top: 720
 }
 
 var enemies = [
-    {left: 350, top: 200},
-    {left: 450, top: 200},
+    {left: 250, top: 100},
+    {left: 450, top: 100},
     {left: 550, top: 200},
-    {left: 350, top: 200}
+    {left: 350, top: 200},
+    {left: 650, top: 100},
 ]
-
+  
 
 var missiles = []
         
@@ -74,13 +75,14 @@ document.onkeydown = function(e) {
     drawPlayer();
 }
 
+      
 function gameLoop() {
     moveEnemies();
     moveMissiles();
     drawPlayer();
     drawEnemies();
     drawMissiles();
-    setTimeout(gameLoop, 50);
+    setTimeout(gameLoop, 32);
 }
 
 gameLoop();
