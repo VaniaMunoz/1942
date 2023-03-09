@@ -79,7 +79,6 @@ document.onkeydown = function(e) {
 }
     
 
-      
 function gameLoop() {
     moveEnemies();
     moveMissiles();
